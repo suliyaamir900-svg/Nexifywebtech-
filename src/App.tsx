@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { RouterProvider, useRouter } from './router/Router';
 import { Navbar } from './components/Navbar';
 import { Home } from './components/Home';
@@ -178,6 +179,7 @@ function AppContent() {
       />
 
       <Footer darkMode={darkMode} onSelectCategory={(cat) => setSelectedCategory(cat)} />
+      <SpeedInsights />
     </div>
   );
 }
