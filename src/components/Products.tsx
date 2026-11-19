@@ -18,9 +18,7 @@ export const Products: React.FC<ProductsProps> = ({
   darkMode,
   selectedCategory,
   setSelectedCategory,
-  selectedProduct: _selectedProduct,
   setSelectedProduct,
-  onStartProject: _onStartProject,
 }) => {
   const { queryParams, navigate } = useRouter();
   const [searchQuery, setSearchQuery] = useState('');
