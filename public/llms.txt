@@ -1,0 +1,38 @@
+# NEXIFYWEBTECH
+
+> We Build Digital Experiences.
+
+NEXIFYWEBTECH is an India-based IT Solutions & Software Development Company with 4+ years of experience serving individuals, startups, businesses, and organizations worldwide through remote delivery.
+
+## Verified Track Record
+- **Experience**: 4+ Years in Software & IT Solutions
+- **Android Apps Built**: 20+ custom Android applications
+- **Windows Apps Built**: 10+ Windows desktop software solutions
+- **Websites & Web Apps Built**: 50+ responsive websites and web applications
+
+## Proprietary Developed Projects & Portfolio
+- **Store POS – Retail Management Software**: Desktop point-of-sale system for retail stores with inventory, barcode scanning, thermal receipt printing, and profit/loss reports.
+- **Medical POS – Pharmacy Management Software**: Pharmacy management software with medicine batch numbers, expiry tracking, prescription billing, and supplier records.
+- **Hotel POS – Restaurant Management Software**: Restaurant and hotel POS system featuring visual table management, kitchen order tickets (KOT), and multi-counter billing.
+- **Library Management System**: Digital cataloging, member registration, book issuing, returning, and fine tracking software.
+- **Classes Management System**: Educational coaching management system for student admissions, batch scheduling, attendance, and fee installments.
+- **Hisab Software – Accounting & Transaction Management**: Digital business ledger, cashbook, customer/supplier accounts, and debit/credit tracking.
+- **Expense Management Software**: Personal and business expense tracking application with monthly summaries and category analytics.
+- **WorkKhata – Business Record Management App**: Mobile Android app for customer ledgers, daily transactions, and instant WhatsApp receipt sharing.
+- **HaazriPro – Attendance & Wage Management App**: Mobile Android app for contractor workforce attendance, daily wages, half-days, overtime, and monthly salary slips.
+- **Homeopathy Clinic Management System**: Web platform for patient records, digital prescriptions, consultation history, and clinic administration.
+- **PDFLove – Online PDF Tools Platform**: Free browser-based online PDF document utility platform (https://www.pdflove.store/) for merging, splitting, compressing, and converting PDF files.
+- **NEXIFYWEBTECH Official Website**: Official corporate web presence engineered with a premium Glassmorphism design system.
+
+## Core Services
+- **Android App Development**: Custom native Android applications with Jetpack Compose UI and offline-first database sync.
+- **Windows Software Development**: Robust C# .NET desktop software solutions, POS systems, and offline-first local databases.
+- **Website Development**: High-performance corporate websites, e-commerce stores, and responsive landing pages.
+- **Web Application Development**: Custom web platforms, SaaS dashboards, and management platforms.
+- **UI/UX & Creative Design**: Modern user interface design, design systems, and digital branding.
+- **Custom Software & IT Solutions**: Tailor-made software engineering and digital transformation solutions.
+
+## Contact & Direct Inquiry
+- **Official Support Email**: nexifywebtech@gmail.com
+- **Instagram**: @Nexifywebtech
+- **Geographic Coverage**: India base with global remote client delivery.

@@ -1,0 +1,6 @@
+{
+  "name": "NEXIFYWEBTECH",
+  "description": "Official company website for NEXIFYWEBTECH — IT Solutions & Software Development Company building Android apps, Windows desktop software, websites, and custom digital platforms.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

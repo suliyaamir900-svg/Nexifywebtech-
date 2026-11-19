@@ -1,0 +1,190 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *, .dark, .dark *));
+
+@layer base {
+  :root,
+  [data-theme='dark'] {
+    color-scheme: dark;
+    --bg-primary: #101114;
+    --bg-secondary: #181A20;
+    --bg-card: #202329;
+    --bg-card-glass: rgba(32, 35, 41, 0.78);
+    --bg-header: rgba(16, 17, 20, 0.88);
+    --accent-primary: #2979FF;
+    --accent-secondary: #55A3FF;
+    --accent-soft: rgba(41, 121, 255, 0.12);
+    --accent-soft-border: rgba(41, 121, 255, 0.35);
+    --text-main: #FFFFFF;
+    --text-secondary: #A7ADB8;
+    --border-subtle: #30343D;
+    --hover-glow: rgba(41, 121, 255, 0.30);
+    --input-bg: #181A20;
+    --shadow-card: 0 20px 44px -16px rgba(0, 0, 0, 0.55);
+  }
+
+  [data-theme='light'] {
+    color-scheme: light;
+    --bg-primary: #F6F8FC;
+    --bg-secondary: #FFFFFF;
+    --bg-card: #FFFFFF;
+    --bg-card-glass: rgba(255, 255, 255, 0.88);
+    --bg-header: rgba(255, 255, 255, 0.92);
+    --accent-primary: #2979FF;
+    --accent-secondary: #1D63DC;
+    --accent-soft: rgba(41, 121, 255, 0.08);
+    --accent-soft-border: rgba(41, 121, 255, 0.25);
+    --text-main: #101114;
+    --text-secondary: #4B5565;
+    --border-subtle: #DCE2EC;
+    --hover-glow: rgba(41, 121, 255, 0.20);
+    --input-bg: #F8FAFD;
+    --shadow-card: 0 18px 40px -16px rgba(16, 17, 20, 0.10);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-primary);
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    overflow-x: hidden;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Unified Surface & Button Primitives */
+.nexify-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-card);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease, background-color 0.25s ease;
+}
+
+.nexify-card:hover {
+  border-color: rgba(41, 121, 255, 0.55);
+  box-shadow: 0 20px 44px -16px var(--hover-glow);
+}
+
+.nexify-glass {
+  background-color: var(--bg-card-glass);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-card);
+}
+
+.nexify-surface-secondary {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+}
+
+.nexify-btn-primary {
+  background-color: #2979FF;
+  color: #FFFFFF;
+  border: 1px solid #2979FF;
+  box-shadow: 0 8px 24px -6px rgba(41, 121, 255, 0.42);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.nexify-btn-primary:hover {
+  background-color: #1E6AF0;
+  box-shadow: 0 12px 30px -4px rgba(41, 121, 255, 0.55);
+}
+
+.nexify-btn-primary:active {
+  transform: scale(0.985);
+}
+
+.nexify-btn-secondary {
+  background-color: transparent;
+  color: var(--text-main);
+  border: 1px solid rgba(41, 121, 255, 0.55);
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.nexify-btn-secondary:hover {
+  background-color: rgba(41, 121, 255, 0.10);
+  border-color: #55A3FF;
+  box-shadow: 0 8px 24px -8px rgba(41, 121, 255, 0.30);
+}
+
+.nexify-input {
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nexify-input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.nexify-input:focus {
+  outline: none;
+  border-color: #2979FF;
+  box-shadow: 0 0 0 3px rgba(41, 121, 255, 0.22);
+}
+
+/* Subtle GPU-composited floating animations for Hero visual elements */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+@keyframes floatMedium {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -14px, 0);
+  }
+}
+
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 9px, 0);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 7s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-float-medium {
+  animation: floatMedium 5.5s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-float-reverse {
+  animation: floatReverse 6.5s ease-in-out infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-slow,
+  .animate-float-medium,
+  .animate-float-reverse {
+    animation: none !important;
+    transform: none !important;
+  }
+}
