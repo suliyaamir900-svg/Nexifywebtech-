@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { RouterProvider, useRouter } from './router/Router';
 import { Navbar } from './components/Navbar';
 import { Home } from './components/Home';
@@ -186,6 +187,7 @@ export default function App() {
   return (
     <RouterProvider>
       <AppContent />
+      <Analytics />
     </RouterProvider>
   );
 }
